@@ -85,7 +85,7 @@ From the repository root:
 
 ```bash
 pnpm install
-pnpm --filter @workspace/language-translator run dev
+PORT=4173 BASE_PATH=/ pnpm --filter @workspace/language-translator run dev
 ```
 
 Vite will print the local development URL in the terminal.
@@ -93,13 +93,13 @@ Vite will print the local development URL in the terminal.
 To create a production build:
 
 ```bash
-pnpm --filter @workspace/language-translator run build
+PORT=4173 BASE_PATH=/ pnpm --filter @workspace/language-translator run build
 ```
 
 To preview the production build:
 
 ```bash
-pnpm --filter @workspace/language-translator run serve
+PORT=4173 BASE_PATH=/ pnpm --filter @workspace/language-translator run serve
 ```
 
 ## Verification
@@ -108,7 +108,7 @@ The completed project has been checked with:
 
 ```bash
 pnpm --filter @workspace/language-translator run typecheck
-pnpm --filter @workspace/language-translator run build
+PORT=4173 BASE_PATH=/ pnpm --filter @workspace/language-translator run build
 ```
 
 ## Task 1 submission
