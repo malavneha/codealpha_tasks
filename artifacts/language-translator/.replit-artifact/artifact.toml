@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI Language Translator"
+description = "A clean, responsive language translator for internship assignments with language selection, translation, copy, swap, and text-to-speech controls."
+version = "1.0.0"
+id = "artifacts/language-translator"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19621
+
+[services.development]
+run = "pnpm --filter @workspace/language-translator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/language-translator", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/language-translator/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19621"
+BASE_PATH = "/"
