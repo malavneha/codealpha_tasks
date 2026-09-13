@@ -9,7 +9,8 @@ The app provides a focused translation workspace with language selection, transl
 
 ##live demo
 https://lingua-bridge--malavneha855mal.replit.app⁠
-💻 GitHub:
+
+## GitHub:
 https://github.com/malavneha855mal/codealpha_tasks⁠
 
 ## Features
