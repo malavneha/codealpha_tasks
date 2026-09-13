@@ -16,6 +16,9 @@ https://lingua-bridge--malavneha855mal.replit.app⁠
 
 ## GitHub:
 https://github.com/malavneha855mal/codealpha_tasks⁠
+## blog post
+
+https://www.linkedin.com/posts/dr-neha-malav-743a25332_codealpha-aiinternship-artificialintelligence-activity-7504508828550565888-GgJo?utm_source=share&utm_medium=member_android&rcm=ACoAAFPNH-MBXp2sRv4_I_GZ4b73lZqB8QJm3hQ
 
 ## Features
 
