@@ -11,6 +11,11 @@ import {
   Volume2,
   WandSparkles,
 } from 'lucide-react';
+import { Route, Switch } from 'wouter';
+
+import { TaskNavigation } from '@/components/task-navigation';
+import FaqChatbotPage from '@/pages/faq-chatbot';
+import NotFound from '@/pages/not-found';
 
 type Language = {
   code: string;
@@ -181,9 +186,12 @@ function TranslatorApp() {
               <div className="text-[15px] font-extrabold tracking-[-0.03em] text-foreground" data-testid="text-brand-name">lingua</div>
             </div>
           </div>
-          <div className="hidden items-center gap-2 text-xs font-semibold text-muted-foreground sm:flex" data-testid="text-local-privacy">
-            <ShieldCheck size={15} className="text-primary" aria-hidden="true" />
-            Private by design
+          <div className="flex items-center gap-3">
+            <TaskNavigation />
+            <div className="hidden items-center gap-2 text-xs font-semibold text-muted-foreground xl:flex" data-testid="text-local-privacy">
+              <ShieldCheck size={15} className="text-primary" aria-hidden="true" />
+              Private by design
+            </div>
           </div>
         </header>
 
@@ -360,7 +368,13 @@ function TranslatorApp() {
 }
 
 function App() {
-  return <TranslatorApp />;
+  return (
+    <Switch>
+      <Route path="/faq-chatbot" component={FaqChatbotPage} />
+      <Route path="/" component={TranslatorApp} />
+      <Route component={NotFound} />
+    </Switch>
+  );
 }
 
 export default App;
