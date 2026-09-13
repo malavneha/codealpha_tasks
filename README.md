@@ -7,7 +7,7 @@ This repository contains two CodeAlpha internship submissions in one responsive 
 
 The app provides a focused translation workspace with language selection, translation, copy, language swapping, and text-to-speech support. It runs entirely in the browser and does not require an account, server-side API key, or paid AI service.
 
-##live demo:
+## live demo:
 https://lingua-bridge--malavneha855mal.replit.app⁠
 
 ## GitHub:
